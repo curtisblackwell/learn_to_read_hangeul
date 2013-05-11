@@ -1,0 +1,50 @@
+// $iconSpritePath: "../images/glyphicons-halflings.png";
+// $iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body {
+  margin: 0 auto;
+  width: 480px;
+}
+
+h1 { font-size: $baseFontSize * 2.5; }
+
+.chromeframe {
+  @extend .alert;
+  @extend .alert-error;
+
+  margin-top: $baseLineHeight / 2;
+}
+
+/**
+ * Header
+ */
+
+#header_main { margin-bottom: $baseLineHeight; }
+
+/**
+ * Tables
+ */
+
+.tab-content > table.active { display: table; }
+
+.table {
+  caption { @extend h2; }
+
+  & > tbody > tr > td:nth-child(3) {
+    color: $grayLight;
+
+    b { color: $textColor; }
+  }
+}
+.table.center_text th,
+.table.center_text td { @extend .center_text; }
+
+.conditions strong { text-transform: uppercase; }
+
+/**
+ * Utilities
+ */
+
+.center_text { text-align: center; }
